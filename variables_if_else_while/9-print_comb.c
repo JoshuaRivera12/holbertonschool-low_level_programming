@@ -5,23 +5,23 @@
  *
  *  Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char num;
+	int i = 0;
 
-	for (num = '0'; num <= '8'; num++)
+	while (i < 10)
 	{
-		putchar(num);
-		putchar(',');
-		putchar(' ');
-	}
+		putchar(i + '0');
 
-	putchar('9');
+			if (i < 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+
+			i++;
+		}
 
 	putchar('$');
-
-	putchar('\n');
-
 	return (0);
 }
