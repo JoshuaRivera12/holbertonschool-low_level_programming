@@ -8,12 +8,14 @@
 
 int main(void)
 {
-	char num;
+	int n = 0;
 
-	for (num = '0'; num <= '9'; num++)
+	while (n < 10)
 	{
-		putchar(num);
+	putchar(n + '0');
+	n++;
 	}
+
 	putchar('\n');
 	return (0);
 }
