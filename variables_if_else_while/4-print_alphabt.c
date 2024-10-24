@@ -8,30 +8,14 @@
 
 int main(void)
 {
-	putchar('a');
-	putchar('b');
-	putchar('c');
-	putchar('d');
-	putchar('f');
-	putchar('g');
-	putchar('h');
-	putchar('i');
-	putchar('j');
-	putchar('k');
-	putchar('l');
-	putchar('m');
-	putchar('n');
-	putchar('o');
-	putchar('p');
-	putchar('r');
-	putchar('s');
-	putchar('t');
-	putchar('u');
-	putchar('v');
-	putchar('w');
-	putchar('x');
-	putchar('y');
-	putchar('z');
+	char ch;
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
+	}
 	putchar('\n');
-		return (0);
+	return (0);
 }
