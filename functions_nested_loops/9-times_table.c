@@ -6,14 +6,11 @@ void times_table(void)
 {
     int num, div, result;
 
-    /* At this point we know what this does*/
     for (num = 0; num < 10; num++)
     {
         for (div = 0; div < 10; div++)
         {
-            /* Down here we are making all the different number intger so the 
-            computer prints it*/
-            result = num * div;
+          result = num * div;
             if (result > 9)
             {
                 _putchar((result / 10) + '0');
