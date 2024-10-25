@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _isalpha - checks if a character is an alphabetic letter
- * @c: the character to check
+ * print_sign - prints the sign of a number
+ * @n: the number to check
  *
- * Return: 1 if c is a letter (lowercase or uppercase), otherwise 0
+ * Return: 1 if n is greater than zero, 0 if n is zero,
+ *         -1 if n is less than zero
  */
 
 int print_sign(int n)
