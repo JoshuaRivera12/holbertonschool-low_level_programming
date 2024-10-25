@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * int _abs(int);  prints the sign of a number
- * @n: the number to check
+ * int _abs(int) - Write a function that computes the absolute value of an integer
+ * @n: the integer that computes the value
  *
- * Return: 1 if n is greater than zero, 0 if n is zero,
- *         -1 if n is less than zero
+ * Return: the absoulte value of the number
  */
 
 int _abs(int n)
