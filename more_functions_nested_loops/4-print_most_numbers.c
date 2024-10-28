@@ -7,7 +7,7 @@
 
 void print_most_numbers(void)
 {
-	char n[] = "1356789";
+	char n[] = "01356789";
 	int i = 0;
 
 		while (n[i] != '\0')
