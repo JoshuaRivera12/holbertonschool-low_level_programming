@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* mul(int a, int b) - multiplys both numbers
+* mul- multiplys both numbers
 * @a: is the first number being multiplied
 * @b: is the second number being mulitplied
 *
@@ -10,5 +10,5 @@
 
 int mul(int a, int b)
 {
-	return a * b;
+	return (a * b);
 }
