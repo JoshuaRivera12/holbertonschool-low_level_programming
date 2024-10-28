@@ -7,11 +7,13 @@
 
 void print_most_numbers(void)
 {
-	{
-	for (n = '0'; i <= '9'; n++)
-		if (n == '2' || i == '4')
-			continue;
-	_putchar(n)
-	}
-	_putchar('\n')
+	char n[] = "1356789";
+	int i = 0;
+
+		while (n[i] != '\0')
+		{
+			_putchar(n[i]);
+			i++;
+		}
+	_putchar('\n');
 }
