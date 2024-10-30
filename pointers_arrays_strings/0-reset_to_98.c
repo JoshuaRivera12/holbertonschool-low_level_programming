@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 * reset_to_98 - A function thats takes an int and updates the value to 98
