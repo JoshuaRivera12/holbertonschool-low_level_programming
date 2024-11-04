@@ -2,9 +2,11 @@
 #include <stddef.h>
 
 /**
-* _strchr - check the line for characters
+* _strchr - check the string line for characters
 * @s: the line to check
 * @c: the character to check
+*
+* Return: Always NULL
 */
 
 char *_strchr(char *s, char c)
