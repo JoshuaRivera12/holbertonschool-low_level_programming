@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* memset - Function that fills the first part of bites
+* _memset - Function that fills the first part of bites
 * @s: A value
 * @b: A value
 * @n: A value
