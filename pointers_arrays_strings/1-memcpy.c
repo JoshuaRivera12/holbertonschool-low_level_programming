@@ -1,21 +1,20 @@
 #include "main.h"
 
 /**
-* _memcpy - copys the code and paste it
-* @dest: the place the code is going to
-* @src: the code of the text
-* @n: N/A
+* _memcpy - Copies memory area
+* @dest: Destination buffer
+* @src: Source buffer
+* @n: Number of bytes to copy
 *
-* return: always 0
+* Return: Pointer to the destination buffer
 */
-
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int i;
 
-	for (; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
-		dest[i] = *src + i;
+		dest[i] = src[i];
 	}
 	return (dest);
 }
