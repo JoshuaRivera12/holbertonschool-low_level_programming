@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* memcpy - copys the code and paste it
+* _memcpy - copys the code and paste it
 * @dest: the place the code is going to
 * @src: the code of the text
 * @n: N/A
