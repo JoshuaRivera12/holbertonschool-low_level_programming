@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
+ * _strlen_recursion - the code that counts letters and spaces
+ * @s: the code that is being counted
  *
- *
- *
- *
+ * Return: NULL
  */
 
 int _strlen_recursion(char *s)
