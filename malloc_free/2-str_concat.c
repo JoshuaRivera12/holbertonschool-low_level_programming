@@ -1,51 +1,51 @@
 #include "main.h"
-#include <string.h>
 #include <stdlib.h>
 
 /**
- *str_concat - concat 2 strings
- *@s1: first string
- *@s2: second string
- *Return: Return NULL or the concatenated string
+ * str_concat - concatenates two string
+ * @s1: the first string
+ * @s2: the string to add to @s1
+ * Return: a pointer that points to a newly allocated space which
+ * contains the contents of @s1, followed by the contents of @s2,
+ * and null terminated. Should return NULL on failure
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int lengh1, lengh2, size, i, j;
-	char *mall;
+	char *s3;
+	unsigned int s1len = 0;
+	unsigned int s2len = 0;
+	unsigned int s3len;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
 	if (s1 == NULL)
-	{
-		lengh1 = 0;
-	}
-	else
-	{
-		lengh1 = strlen(s1);
-	}
+		s1 = "";
 	if (s2 == NULL)
-	{
-		lengh2 = 0;
-	}
-	else
-	{
-		lengh2 = strlen(s2);
-	}
+		s2 = "";
 
-	size = lengh1 + lengh2;
-	mall = malloc(sizeof(char) * size + 1);
+	while (s1[s1len])
+		s1len++;
+	while (s2[s2len])
+		s2len++;
 
-	if (mall == NULL)
-	{
+	s3len = s1len + s2len;
+
+	s3 = malloc(sizeof(char) * s3len + 1);
+	if (s3 == NULL)
 		return (NULL);
-	}
-	for (i = 0; i < lengh1; i++)
+
+	while (i < s1len)
 	{
-		mall[i] = s1[i];
+		s3[i] = s1[i];
+		i++;
 	}
-	for (j = 0; j < lengh2; j++)
+
+	while (i <= s3len)
 	{
-		mall[lengh1 + j] = s2[j];
+		s3[i] = s2[j];
+		i++;
+		j++;
 	}
-	mall[size + 1] = '\0';
-	return (mall);
+	return (s3);
 }
