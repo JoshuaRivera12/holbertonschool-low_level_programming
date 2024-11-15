@@ -7,7 +7,7 @@
 * @s2: 2nd string
 * @n: numbers of bites
 *
-* return: NULL
+* Return: NULL
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
