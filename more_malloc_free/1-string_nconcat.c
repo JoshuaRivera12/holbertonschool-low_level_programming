@@ -10,7 +10,7 @@
 * return: NULL
 */
 
-char *string_nconcat(char *s1, char *2, unsing int n)
+char *string_nconcat(char *s1, char *s2, unsing int n)
 {
 	char *ar;
 	unsigned int i = 0;
