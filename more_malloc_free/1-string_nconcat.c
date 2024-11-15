@@ -5,7 +5,7 @@
 * string_nconcat - two strings
 * @s1: first string
 * @s2: 2nd string
-* @n: numbers of bites 
+* @n: numbers of bites
 *
 * return: NULL
 */
