@@ -1,18 +1,26 @@
 #include "lists.h"
+#include <string.h>
+#include <stdlib.h>
 /**
- * list_len - print single listed data
- * @h: pointer to a module
- * Return: modules found
- */
+ * add_node - funcion to add a new node at the begining
+ * @head: a pointer to the pointer of the link list head
+ * @str: string to put in the element
+ * Return: Return the adress to the new element
+*/
 
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
-	int i = 0;
+	list_t *new_node = (list_t *)malloc(sizeof(list_t));
 
-	while (h)
-	{
-		h = h->next;
-		i++;
-	}
-	return (i);
+	if (new_node == NULL)
+		return (NULL);
+	new_node->str = strdup(str);
+
+	new_node->len = strlen(str);
+
+	new_node->next = *head;
+
+	*head = new_node;
+
+	return (new_node);
 }
